@@ -1,3 +1,7 @@
+sf_web_app_main:
+    resource: "@SfWebAppMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
