@@ -1,0 +1,3 @@
+sf_web_app_cms_office_homepage:
+    path:     /
+    defaults: { _controller: SfWebAppCmsOfficeBundle:Default:index }
