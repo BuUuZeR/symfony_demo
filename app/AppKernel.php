@@ -18,7 +18,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new SfWebApp\MainBundle\SfWebAppMainBundle(),
             new SfWebApp\BackOfficeBundle\SfWebAppBackOfficeBundle(),
-            new SfWebApp\FrontOfficeBundle\SfWebAppFrontOfficeBundle()
+            new SfWebApp\FrontOfficeBundle\SfWebAppFrontOfficeBundle(),
+            new SfWebApp\CmsBundle\SfWebAppCmsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
