@@ -1,7 +1,3 @@
-sf_web_app_cms_office:
-    resource: "@SfWebAppCmsOfficeBundle/Resources/config/routing.yml"
-    prefix:   /
-
 sf_web_app_front_office:
     resource: "@SfWebAppFrontOfficeBundle/Resources/config/routing.yml"
     prefix:   /
