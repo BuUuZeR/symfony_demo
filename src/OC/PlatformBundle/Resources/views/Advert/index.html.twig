@@ -1,12 +1,27 @@
-{# src/OC/PlatformBundle/Ressources/views/Advert/index.html.twig #}
+{# src/OC/PlatformBundle/Resources/views/Advert/index.html.twig #}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Bienvenu sur ma premiere page</title>
-</head>
-<body>
-	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem alias voluptate, nihil culpa. Delectus vero, cumque repudiandae consequatur veniam, in inventore laborum. Quo ratione recusandae facere, accusantium a laborum, ea.</p>
-</body>
-</html>
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+{% block ocplatform_body %}
+
+  <h2>Liste des annonces</h2>
+
+  <ul>
+    {% for advert in listAdverts %}
+      <li>
+        <a href="{{ path('oc_platform_view', {'id': advert.id}) }}">
+          {{ advert.title }}
+        </a>
+        par {{ advert.author }},
+        le {{ advert.date|date('d/m/Y') }}
+      </li>
+    {% else %}
+      <li>Pas (encore !) d'annonces</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
