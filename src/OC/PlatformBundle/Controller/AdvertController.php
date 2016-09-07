@@ -20,4 +20,9 @@ class AdvertController extends Controller
 	{
 		return new Response('Parametre passé par url '.$id);
 	}
+
+	public function viewSlugAction($slug,$year,$format)
+	{
+		return new Response('Slug : '.$slug.'<br>L\'année '.$year.'<br>Format : '.$format);
+	}
 }
