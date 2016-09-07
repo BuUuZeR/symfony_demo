@@ -1,4 +1,4 @@
-my_project
-==========
+projet
+======
 
-A Symfony project created on September 6, 2016, 3:38 pm.
+A Symfony project created on September 7, 2016, 11:20 am.
