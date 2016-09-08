@@ -67,7 +67,7 @@ class AdvertController extends Controller
 
 			return $this->redirectToRoute('oc_platform_view', array('id' => 5));
 		}
-		
+
 		return $this->render('OCPlatformBundle:Advert:add.html.twig');
 	}
 
@@ -85,7 +85,7 @@ class AdvertController extends Controller
 			'content' => 'Nous recherchons un développeur Symfony débutant sur Lyon. Blabla…',
 			'date'    => new \Datetime()
 		);
-		
+
 		return $this->render('OCPlatformBundle:Advert:edit.html.twig', array(
 			'advert' => $advert
 	    ));
